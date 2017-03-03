@@ -18,12 +18,11 @@
       </a-assets>
 
       <!-- Hands -->
-      <a-entity hand-controls="left" aabb-collider="objects: .cube;" grab></a-entity>
-      <a-entity hand-controls="right" aabb-collider="objects: .cube;" grab></a-entity>
+      <a-entity hand-controls="left" aabb-collider="objects: #dino;" grab></a-entity>
+      <a-entity hand-controls="right" aabb-collider="objects: #dino;" grab></a-entity>
 
       <!-- A-Frame Model -->
-      <a-collada-model src="#dino" position="0 0 0" rotation="0 0 0" scale="50 50 50">
-      </a-collada-model>
+      <a-obj-model src="#dino" scale="0.001 0.001 0.001"></a-obj-model>
 
         <!-- Environment -->
         <a-entity id="sky"
